@@ -264,6 +264,41 @@ section hr {
 }
 
 
+/* بخش اخبار */
+details {
+  margin-bottom: 1rem;
+}
+
+.news-title {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.news-title:hover {
+  background-color: #e0e0e0;
+}
+
+.news-content {
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+details[open] .news-content {
+  opacity: 1;
+  max-height: 500px; /* تنظیم بر اساس نیاز */
+}
+
+
+
 /* گالری تصاویر رویداد */
 .gallery-slider {
     display: flex;
