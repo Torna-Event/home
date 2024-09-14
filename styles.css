@@ -267,25 +267,35 @@ section hr {
 /* بخش اخبار */
 details {
   margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid rgba(0, 255, 204, 0.3);
+  color: white;
 }
 
 .news-title {
   cursor: pointer;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  padding: 15px;
+  background-color: rgba(0, 31, 63, 0.6);
+  border-radius: 10px;
+  color: #00ffcc;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: right;
 }
 
 .news-title:hover {
-  background-color: #e0e0e0;
+  background-color: rgba(0, 255, 204, 0.3);
+  transform: scale(1.02);
 }
 
 .news-content {
   padding: 10px;
-  background-color: #fafafa;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 204, 0.2);
+  color: white;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -294,10 +304,8 @@ details {
 
 details[open] .news-content {
   opacity: 1;
-  max-height: 500px; /* تنظیم بر اساس نیاز */
+  max-height: 500px;
 }
-
-
 
 /* گالری تصاویر رویداد */
 .gallery-slider {
@@ -310,7 +318,7 @@ details[open] .news-content {
     box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
 }
 
-.gallery-image {
+0.gallery-image {
     min-width: 100%;
     background-size: cover;
     background-position: center;
@@ -407,6 +415,16 @@ footer p {
         font-size: 0.7em; /* کاهش اندازه پاراگراف‌ها توضیح اعضا */
         line-height: 10px;
     }
+
+  .news-title {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  .news-content {
+    font-size: 0.9em;
+    padding: 8px;
+  }
 
     .team-member {
         width: 120px; /* کاهش عرض اعضای تیم */
