@@ -266,13 +266,8 @@ section hr {
 
 /* بخش اخبار */
 details {
-  margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 10px;
-  border: 1px solid rgba(0, 255, 204, 0.3);
-  color: white;
 }
 
 .news-title {
@@ -281,20 +276,18 @@ details {
   background-color: rgba(0, 31, 63, 0.6);
   border-radius: 10px;
   color: #00ffcc;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  text-align: right;
+  transition: background-color 0.3s ease;
+/*   transition: background-color 0.3s ease, transform 0.3s ease; */
 }
 
 .news-title:hover {
   background-color: rgba(0, 255, 204, 0.3);
-  transform: scale(1.02);
+/*   transform: scale(1.02); */
 }
 
 .news-content {
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  border: 1px solid rgba(0, 255, 204, 0.2);
   color: white;
   opacity: 0;
   max-height: 0;
@@ -304,7 +297,7 @@ details {
 
 details[open] .news-content {
   opacity: 1;
-  max-height: 500px;
+  max-height: 1000px;
 }
 
 /* گالری تصاویر رویداد */
